@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricbuzz Header</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #009270;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      flex-wrap: wrap;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .cricbuzz-plus {
+      background-color: white;
+      color: #009270;
+      border: none;
+      padding: 6px 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-icon {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .right-section {
+        margin-top: 10px;
+        align-self: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="left-section">
+    <div class="logo">cric<span>buzz</span></div>
+    <nav>
+      <a href="#">Live Scores</a>
+      <a href="#">Schedule</a>
+      <a href="#">Archives</a>
+      <a href="#">News</a>
+      <a href="#">Series</a>
+      <a href="#">Teams</a>
+      <a href="#">Videos</a>
+      <a href="#">Rankings</a>
+    </nav>
+  </div>
+
+  <div class="right-section">
+    <button class="cricbuzz-plus">Cricbuzz Plus</button>
+    <div class="search-icon">&#128269;</div>
+  </div>
+</header>
+
+</body>
+</html>
